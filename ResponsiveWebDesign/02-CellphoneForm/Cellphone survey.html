@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cellphone Survey</title>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Cellphone Survey</h1>
+        <p id="description" class="description text-center">
+            Let's know what people wants from their cellphones
+        </p>
+    </header>
+
+    <form id="survey-form">
+        
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder=" Enter your name"
+                required
+            />
+        </div>
+        
+        <div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder=" Enter your email"
+                    required
+                />
+            </div>    
+        </div>
+        
+        <div class="form-group">
+            <label id="number-label" for="number">
+                Age<span class="clue"></span>
+            </label>
+            <input
+                type="number"
+                name="age"
+                id="number"
+                min="00"
+                max="99"
+                class="form-control"
+                placeholder=" Optional"
+            />
+        </div>
+        
+        <div class="form-group">
+            <p>How often do you use your cellphone?</p>
+            <select id="dropdown" name="use" class="form-control" required>
+                <option disabled selected value>Select frequency of use</option>
+                <option value="Every hour">Every hour</option>
+                <option value="Couple times per day">Couple times per day</option>
+                <option value="Once per day">Once per day</option>
+                <option value="Once per week">Once per week</option>
+                <option value="Only in emergency">Only in emergency</option>
+                <option value="Never">Never</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>You may wonder about change it?</p>
+            <label>
+                <input
+                    name="user-buy-choose"
+                    value="every-day"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />Every day</label>
+            </label>
+            <label>
+                <input
+                    name="user-buy-choose"
+                    value="sometimes"
+                    type="radio"
+                    class="input-radio"
+                    />Sometimes</label>
+            <label>
+                <input
+                    name="user-buy-choose"
+                    value="never"
+                    type="radio"
+                    class="input-radio"
+                    />Never</label>
+            
+        </div>
+
+        <div class="form-group">
+            <p>How do you pay your cellphones?</p>
+            <select id="pay-method" name="pay-method" class="form-control" required>
+                <option selected disabled="true">Select pay method</option>
+                <option value="cash">Cash</option>
+                <option value="credit/Debit">Credit/Debit Card</option>
+                <option value="criptocoins">Criptocoins</option>
+                <option value="check">Checks</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>
+                What are your favorites features of a cellphone?
+            <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input 
+                name="prefer"
+                value="camera"
+                type="checkbox"
+                class="input-checkbox"
+            />Camera</label>
+            <label>
+                <input
+                name="prefer"
+                value="Operative System"
+                type="checkbox"
+                class="input-checkbox"
+            />Operative System</label>
+            <label>
+                <input
+                name="prefer"
+                value="screen"
+                type="checkbox"
+                class="input-checkbox"
+            />Screen</label>
+            <label>
+                <input
+                name="prefer"
+                value="size"
+                type="checkbox"
+                class="input-checkbox"
+            />Cellphone's size</label>
+            <label>
+                <input
+                name="prefer"
+                value="battery"
+                type="checkbox"
+                class="input-checkbox"
+            />Battery</label>
+            <label>
+                <input
+                name="prefer"
+                value="materials"
+                type="checkbox"
+                class="input-checkbox"
+            />Construction Materials</label>
+            <label>
+                <input
+                name="prefer"
+                value="hardware"
+                type="checkbox"
+                class="input-checkbox"
+            />Hardware Power</label>
+        </div>
+
+        <div class="form-group">
+            <p>Anything to add?</p>
+            <textarea
+                id="comments"
+                class="input-text-area"
+                name="comments"
+                placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+</body>
+</html>

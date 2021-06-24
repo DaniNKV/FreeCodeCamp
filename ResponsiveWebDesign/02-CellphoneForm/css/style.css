@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --clr-white: #f3f3f3;
+    --clr-darkblue: #1b1b32;
+    --clr-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --clr-green: rgba(45, 199, 24, 0.89) ;
+    
+    --ff-primary: "Roboto", sans-serif; 
+    --ff-accent:
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
+body {
+    font-family: var(--ff-primary), sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+  
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(71, 122, 73, 0.6),
+        rgba(63, 63, 172, 0.5)
+      ),
+      url(https://www.wallpapertip.com/wmimgs/51-517054_whatsapp-background-images-hd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 4px rgba(0,0,0,0.4);
+}
+.header {
+    padding: 20px; 
+    margin: 1rem;
+}
+
+.description {
+    font-style: italic ;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+.text-center {
+    text-align: center;
+}
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem
+}
+p,
+.form-group {
+    font-size: 1.10rem ;
+    font-weight: 500
+}
+
+.container {
+    position: relative ;
+    color: #fff ;
+    width: 100%;
+    max-width: 768px;
+    margin: 3.125rem auto 0 auto; 
+}
+label {
+    font-size: inherit;
+    display: flex ;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+input,
+button,
+select,
+textarea {
+    margin: 0 ;
+    font-family: inherit ;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block ;
+    margin-right: 0.625rem;
+    min-height: 0.8rem;
+    min-width: 1.25rem;
+}
+
+form {
+    font-size: 1rem ;
+    background-color: rgba(27, 27, 50, 0.5);
+    padding: 3rem;
+    border-radius: 0.25rem
+}
+
+.form-group {
+    margin: 0 auto 1.25rem 0 ;
+    padding: 0.3rem;
+}
+
+.form-control {
+    display: block ;
+    width: 100% ;
+    height: 2.375rem;
+    padding: 0.375rem, 0.75rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--clr-darkblue-alpha);
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff ;
+    outline: 0 ;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25)
+
+}
+.input-text-area {
+    min-height: 120px ;
+    width: 100% ;
+    padding: 0,625rem ;
+    resize: vertical ;
+}
+.clue {
+    margin-left: 0,25rem;
+    font-size: 1rem;
+    font-style: italic ;
+}
+button {
+    border: none ;
+}
+.submit-button {
+    display: block ;
+    width: 100% ;
+    padding: 0.75rem;
+    background: var(--clr-green) ;
+    color: inherit ;
+    border-radius: 2px ;
+    cursor: pointer ;
+}
+#survey-form {
+    margin: auto;
+}
